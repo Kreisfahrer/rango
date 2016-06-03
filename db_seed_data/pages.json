@@ -1,0 +1,57 @@
+[
+{
+	"cat": "Python",
+	"title": "Official Python Tutorial",
+	"url": "http://docs.python.org/2/tutorial/",
+	"views": 5
+},
+
+{
+	"cat": "Python",
+	"title": "How to Think like a Computer Scientist",
+	"url": "http://www.greenteapress.com/thinkpython/",
+	"views": 7
+},
+
+{
+	"cat": "Python",
+	"title": "Learn Python in 10 Minutes",
+	"url": "http://www.korokithakis.net/tutorials/python/",
+	"views": 16
+},
+
+{
+	"cat": "Django",
+	"title": "Official Django Tutorial",
+	"url": "https://docs.djangoproject.com/en/1.5/intro/tutorial01/",
+	"views": 20
+},
+
+{
+	"cat": "Django",
+	"title": "Django Rocks",
+	"url": "http://www.djangorocks.com/",
+	"views": 31
+},
+
+{
+	"cat": "Django",
+	"title": "How to Tango with Django",
+	"url": "http://www.tangowithdjango.com/",
+	"views": 57
+},
+
+{
+	"cat": "Other Frameworks",
+	"title": "Bottle",
+	"url": "http://bottlepy.org/docs/dev/",
+	"views": 24
+},
+
+{
+	"cat": "Other Frameworks",
+	"title": "Flask",
+	"url": "http://flask.pocoo.org",
+	"views": 47
+}
+]
