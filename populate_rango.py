@@ -25,6 +25,7 @@ def add_page(cat, title, url, views=0):
     p.views = views
     p.save()
     print "Hello from master"
+    print "Hello from another branch"
     return p
 
 
