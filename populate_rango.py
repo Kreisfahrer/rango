@@ -24,7 +24,6 @@ def add_page(cat, title, url, views=0):
     p.url = url
     p.views = views
     p.save()
-    print "Hello from master"
     return p
 
 
