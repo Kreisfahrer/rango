@@ -21,13 +21,13 @@ def populate():
 
 def add_page(cat, title, url, views=0):
     p = Page.objects.get_or_create(category=cat, title=title)[0]
-    p.url = url
     p.save()
     return p
 
 
 def add_cat(name):
     c = Category.objects.get_or_create(name=name)[0]
+    print "HEllo"
     return c
 
 
