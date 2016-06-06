@@ -8,8 +8,8 @@ class Category(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = "Category"
-        verbose_name_plural = "Categories"
+        verbose_name = "Goods"
+        verbose_name_plural = "Goods"
 
 
 class Page(models.Model):
