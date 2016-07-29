@@ -11,9 +11,11 @@ from rango.models import Category, Page
 
 
 def populate():
-    pages = load_pages(settings.POPULATION_FILE_PATH)
-    for page in pages:
-        add_page(**page)
+    items = load_pages(settings.POPULATION_FILE_PATH)
+    for item in items:
+        current_category = add_cat(name=item['cat'], views=item['views'], likes=item['likes'])
+        for page in item['pages']:
+            add_page(cat = current_category, **page)
 
     # Print out what we have added to the user.
     print_entries()
@@ -27,16 +29,14 @@ def add_page(cat, title, url, views=0):
     return p
 
 
-def add_cat(name):
-    c = Category.objects.get_or_create(name=name)[0]
+def add_cat(name, views=0, likes=0):
+    c = Category.objects.get_or_create(name=name, views=views, likes=likes)[0]
     return c
 
 
 def load_pages(json_file_path):
     with open(json_file_path) as data:
         values = json.load(data)
-        for value in values:
-            value['cat'] = Category.objects.get_or_create(name=value['cat'])[0]
         return values
 
 
